@@ -9,14 +9,15 @@ var seneca = require('seneca')()
 seneca
   .use('../lib/api.js')
 
-  .declare('../lib/doc.js')
-  .declare('../lib/hist.js')
-  .declare('../lib/real.js')
+  .use('../lib/doc.js')
+  .use('../lib/hist.js')
+  .use('../lib/real.js')
 
   .client({port:9000,pin:{role:'hist',kind:'clock',cmd:'*'},host:web_host})
   .client({port:9001,pin:{role:'real',kind:'clock',cmd:'*'},host:web_host})
+  .client({port:9002,pin:{role:'doc',kind:'clock',cmd:'*'},host:web_host})
 
-  .client({type:'queue',pin:{role:'doc',kind:'clock',cmd:'*'},host:beanstalk_host})
+//  .client({type:'queue',pin:{role:'doc',kind:'clock',cmd:'*'},host:beanstalk_host})
 
 
 var kraken = require('kraken-js'),
