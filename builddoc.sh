@@ -7,3 +7,4 @@ cp package.json build/srv/doc
 cp docker/doc.dockerfile build/srv/doc/Dockerfile
 cd build/srv/doc
 npm install
+echo TARGET:build/srv/doc
