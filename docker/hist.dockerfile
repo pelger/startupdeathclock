@@ -9,7 +9,6 @@ RUN add-apt-repository -y ppa:chris-lea/node.js
 RUN apt-get update
 RUN apt-get install -y nodejs
 
-ADD . /
+ADD .
 EXPOSE 3002
-CMD /usr/bin/node /srv/doc-srv
-
+CMD /usr/bin/node /srv/hist-srv
