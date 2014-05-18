@@ -10,6 +10,6 @@ RUN apt-get update
 RUN apt-get install -y nodejs
 
 ADD . /
-EXPOSE 3002
+EXPOSE 9002
 CMD /usr/bin/node /srv/doc-srv
 

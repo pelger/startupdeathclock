@@ -8,9 +8,9 @@
 //     "contentPath": "path:./locales"
 // },
 //
-// "routes": {
-//     "routePath": "path:./controllers"
-// },
+ "routes": {
+     "routePath": "path:./controllers"
+ }
 //
 //  "view engines": {
 //      "js": {

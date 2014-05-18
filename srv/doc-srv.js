@@ -6,5 +6,5 @@ require('seneca')()
   .use('../lib/doc.js')
   //.listen({type:'queue',pin:{role:'doc',kind:'clock',cmd:'*'},host:beanstalk_host})
   //.client({type:'pubsub',host:redis_host})
-  .listen({port:9002})
+  .listen({host: '0.0.0.0', port:9002})
 
