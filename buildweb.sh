@@ -9,5 +9,5 @@ cd build/web
 npm install
 cd web
 npm install
-bower install
+bower --allow-root install
 echo TARGET:build/web
