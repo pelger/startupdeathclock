@@ -20,7 +20,7 @@
     "less": "~1.6.1",
     "makara": "~0.3.0",
     "nconf": "~0.6.8",
-    "seneca": "0.5.17"
+    "seneca": "0.5.18"
   },
   "devDependencies": {
     "mocha": "~1.17.0",

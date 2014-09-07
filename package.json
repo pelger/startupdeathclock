@@ -24,7 +24,7 @@
   "dependencies": {
     "connect": "^2.14.5",
     "rolling-stats": "~0.1.0",
-    "seneca": "0.5.17",
+    "seneca": "0.5.18",
     "seneca-jsonfile-store": "0.1.3",
     "success": "~0.1.0",
     "underscore": "~1.6.0"
